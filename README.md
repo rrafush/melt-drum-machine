@@ -1,2 +1,16 @@
-# melt-drum-machine
-This all-in-one app combines a virtual piano, a sampler pad, and a dynamic drum machine, providing users with the tools to unleash their creativity and produce unique beats and melodies with ease. Whether you're an experienced musician or a budding artist, Melt offers a seamless and enjoyable musical experience.
+# piano
+
+A new Flutter project.
+
+## Getting Started
+
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+
+For help getting started with Flutter, view our
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
