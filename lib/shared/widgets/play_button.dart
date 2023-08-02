@@ -25,7 +25,7 @@ class PlayButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
         ),
         child: Icon(
-          Icons.play_arrow_outlined,
+          isPlaying ? Icons.pause_outlined : Icons.play_arrow_outlined,
           color: isPlaying ? Colors.white : Colors.white.withOpacity(0.5),
         ),
       ),
