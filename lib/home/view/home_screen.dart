@@ -18,10 +18,21 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> with RouteAware {
   final _pageController = PageController(
-    viewportFraction: 0.8,
+    viewportFraction: 0.6,
     initialPage: 1,
   );
-  int _currentPage = 1;
+  double _currentPage = 1;
+
+  @override
+  void initState() {
+    _pageController.addListener(() {
+      setState(() {
+        _currentPage = _pageController.page ?? 1;
+      });
+    });
+    super.initState();
+  }
+
   @override
   void didChangeDependencies() {
     widget.routeObserver.subscribe(this, ModalRoute.of(context) as PageRoute);
@@ -43,9 +54,9 @@ class _HomeScreenState extends State<HomeScreen> with RouteAware {
       case 0:
         return 'Piano';
       case 1:
-        return 'Pads';
-      case 2:
         return 'Drum Machine';
+      case 2:
+        return 'Pads';
       default:
         return '';
     }
@@ -56,9 +67,9 @@ class _HomeScreenState extends State<HomeScreen> with RouteAware {
       case 0:
         return 'assets/png/piano.png';
       case 1:
-        return 'assets/png/pads.png';
-      case 2:
         return 'assets/png/drum.png';
+      case 2:
+        return 'assets/png/pads.png';
       default:
         return '';
     }
@@ -69,28 +80,12 @@ class _HomeScreenState extends State<HomeScreen> with RouteAware {
       case 0:
         return RouterPath.piano;
       case 1:
-        return RouterPath.samplerPad;
-      case 2:
         return RouterPath.beatMaker;
+      case 2:
+        return RouterPath.samplerPad;
       default:
         return '';
     }
-  }
-
-  void _changePage(int page) {
-    _currentPage = page;
-  }
-
-  Widget _buildAnimatedCard(int index) {
-    return HomeCard(
-      isCurrent: _currentPage == index,
-      assetImage: _getImage(index),
-      title: _getLabel(index),
-      onTap: () => Navigator.pushNamed(
-        context,
-        _getRoute(index),
-      ),
-    );
   }
 
   @override
@@ -103,11 +98,23 @@ class _HomeScreenState extends State<HomeScreen> with RouteAware {
           child: SizedBox(
             height: 330,
             child: PageView.builder(
+              clipBehavior: Clip.none,
               itemCount: 3,
-              onPageChanged: _changePage,
               controller: _pageController,
               itemBuilder: (context, index) {
-                return _buildAnimatedCard(index);
+                return AnimatedScale(
+                  duration: const Duration(milliseconds: 200),
+                  alignment: Alignment.center,
+                  scale: _currentPage - index == 0 ? 1.1 : 0.9,
+                  child: HomeCard(
+                    assetImage: _getImage(index),
+                    title: _getLabel(index),
+                    onTap: () => Navigator.pushNamed(
+                      context,
+                      _getRoute(index),
+                    ),
+                  ),
+                );
               },
             ),
           ),

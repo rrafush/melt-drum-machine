@@ -8,13 +8,11 @@ class HomeCard extends StatelessWidget {
     required this.assetImage,
     required this.onTap,
     required this.title,
-    required this.isCurrent,
   });
 
   final String assetImage;
   final VoidCallback onTap;
   final String title;
-  final bool isCurrent;
 
   @override
   Widget build(BuildContext context) {
@@ -27,10 +25,10 @@ class HomeCard extends StatelessWidget {
           decoration: BoxDecoration(
             color: Theme.of(context).colorScheme.surface,
             borderRadius: BorderRadius.circular(20),
-            boxShadow: [
+            boxShadow: const [
               BoxShadow(
                 color: AppColors.greyDark3,
-                offset: isCurrent ? const Offset(1, 1) : const Offset(5, 5),
+                offset: Offset(5, 5),
                 blurStyle: BlurStyle.solid,
               ),
             ],
