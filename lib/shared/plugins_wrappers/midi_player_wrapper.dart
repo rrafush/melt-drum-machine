@@ -16,7 +16,6 @@ class MidiPlayerWrapper {
   }
 
   Future<void> play(int note, {int? velocity}) async {
-    print('play');
     await _midiPlayer.playMidiNote(midi: note, velocity: velocity ?? 100);
   }
 }
