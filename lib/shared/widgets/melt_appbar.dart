@@ -22,7 +22,7 @@ class MeltAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-    final canPop = Navigator.of(context).canPop();
+    final canPop = ModalRoute.of(context)?.canPop ?? false;
     final color = Theme.of(context).colorScheme.primary;
     return Container(
       decoration: BoxDecoration(
