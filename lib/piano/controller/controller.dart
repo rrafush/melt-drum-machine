@@ -1,4 +1,4 @@
-import 'package:piano/shared/plugins_wrappers/midi_player_wrapper.dart';
+import 'package:melt/shared/plugins_wrappers/midi_player_wrapper.dart';
 
 class Controller {
   final _wrapper = MidiPlayerWrapper(asset: 'assets/piano.sf2');

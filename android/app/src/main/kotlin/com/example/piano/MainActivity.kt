@@ -1,4 +1,4 @@
-package com.example.piano
+package com.example.melt
 
 import io.flutter.embedding.android.FlutterActivity
 

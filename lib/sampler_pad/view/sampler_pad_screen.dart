@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:piano/sampler_pad/controller/controller.dart';
-import 'package:piano/sampler_pad/view/widgets/pad.dart';
-import 'package:piano/shared/widgets/keygroove_appbar.dart';
+import 'package:melt/sampler_pad/controller/controller.dart';
+import 'package:melt/sampler_pad/view/widgets/pad.dart';
+import 'package:melt/shared/widgets/keygroove_appbar.dart';
 
 class SamplerPadScreen extends StatefulWidget {
   const SamplerPadScreen({super.key});

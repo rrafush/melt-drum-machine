@@ -1,4 +1,4 @@
-import 'package:piano/shared/plugins_wrappers/midi_player_wrapper.dart';
+import 'package:melt/shared/plugins_wrappers/midi_player_wrapper.dart';
 
 class BeatMakerController {
   final _wrapper = MidiPlayerWrapper(asset: 'assets/drums.sf2');

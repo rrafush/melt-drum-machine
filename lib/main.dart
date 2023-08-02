@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:piano/home/view/home_screen.dart';
-import 'package:piano/navigation/router.dart';
-import 'package:piano/shared/theme/app_theme.dart';
+import 'package:melt/home/view/home_screen.dart';
+import 'package:melt/navigation/router.dart';
+import 'package:melt/shared/theme/app_theme.dart';
 
 void main() {
   runApp(const MyApp());

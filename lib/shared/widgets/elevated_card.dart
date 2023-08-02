@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:piano/shared/theme/app_colors.dart';
+import 'package:melt/shared/theme/app_colors.dart';
 
 class ElevatedCard extends StatelessWidget {
   const ElevatedCard({

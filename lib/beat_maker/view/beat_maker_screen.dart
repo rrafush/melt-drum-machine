@@ -3,13 +3,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:piano/beat_maker/view/bloc/beat_maker_bloc.dart';
-import 'package:piano/beat_maker/view/widget/beat_row.dart';
-import 'package:piano/shared/extensions/duration.dart';
-import 'package:piano/shared/extensions/int.dart';
-import 'package:piano/shared/theme/app_theme.dart';
-import 'package:piano/shared/widgets/keygroove_appbar.dart';
-import 'package:piano/shared/widgets/play_button.dart';
+import 'package:melt/beat_maker/view/bloc/beat_maker_bloc.dart';
+import 'package:melt/beat_maker/view/widget/beat_row.dart';
+import 'package:melt/shared/extensions/duration.dart';
+import 'package:melt/shared/extensions/int.dart';
+import 'package:melt/shared/theme/app_theme.dart';
+import 'package:melt/shared/widgets/keygroove_appbar.dart';
+import 'package:melt/shared/widgets/play_button.dart';
 
 class BeatMakerScreen extends StatelessWidget {
   const BeatMakerScreen({super.key});

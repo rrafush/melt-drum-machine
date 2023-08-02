@@ -2,7 +2,7 @@ import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:piano/shared/theme/app_theme.dart';
+import 'package:melt/shared/theme/app_theme.dart';
 
 class KeygrooveAppBar extends StatelessWidget implements PreferredSizeWidget {
   const KeygrooveAppBar({

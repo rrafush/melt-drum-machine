@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:piano/shared/constants.dart';
-import 'package:piano/shared/theme/app_colors.dart';
+import 'package:melt/shared/constants.dart';
+import 'package:melt/shared/theme/app_colors.dart';
 
 enum KeyColor {
   white(

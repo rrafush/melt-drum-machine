@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:piano/piano/controller/controller.dart';
-import 'package:piano/piano/view/octave/octave.dart';
-import 'package:piano/shared/widgets/keygroove_appbar.dart';
+import 'package:melt/piano/controller/controller.dart';
+import 'package:melt/piano/view/octave/octave.dart';
+import 'package:melt/shared/widgets/keygroove_appbar.dart';
 
 class PianoScreen extends StatefulWidget {
   const PianoScreen({Key? key}) : super(key: key);

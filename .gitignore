@@ -25,3 +25,9 @@ doc/api/
 
 .flutter-plugins
 .flutter-plugins-dependencies
+**/doc/api/
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+/build/

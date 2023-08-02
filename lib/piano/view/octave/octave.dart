@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:piano/piano/view/octave/black_keys.dart';
-import 'package:piano/piano/view/octave/white_keys.dart';
+import 'package:melt/piano/view/octave/black_keys.dart';
+import 'package:melt/piano/view/octave/white_keys.dart';
 
 class Octave extends StatelessWidget {
   final int octave;

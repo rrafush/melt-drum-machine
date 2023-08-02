@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:piano/shared/theme/app_colors.dart';
-import 'package:piano/shared/theme/app_theme.dart';
+import 'package:melt/shared/theme/app_colors.dart';
+import 'package:melt/shared/theme/app_theme.dart';
 
 class HomeCard extends StatelessWidget {
   const HomeCard({
@@ -30,7 +30,7 @@ class HomeCard extends StatelessWidget {
             boxShadow: [
               BoxShadow(
                 color: AppColors.greyDark3,
-                offset: isCurrent ? Offset(1, 1) : Offset(5, 5),
+                offset: isCurrent ? const Offset(1, 1) : const Offset(5, 5),
                 blurStyle: BlurStyle.solid,
               ),
             ],

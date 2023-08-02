@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:piano/sampler_pad/controller/controller.dart';
-import 'package:piano/shared/theme/app_colors.dart';
+import 'package:melt/sampler_pad/controller/controller.dart';
+import 'package:melt/shared/theme/app_colors.dart';
 
 class Pad extends StatefulWidget {
   final int index;

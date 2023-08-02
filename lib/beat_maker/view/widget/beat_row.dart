@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:piano/beat_maker/view/widget/beat_chip.dart';
-import 'package:piano/shared/theme/app_theme.dart';
-import 'package:piano/shared/widgets/elevated_card.dart';
+import 'package:melt/beat_maker/view/widget/beat_chip.dart';
+import 'package:melt/shared/theme/app_theme.dart';
+import 'package:melt/shared/widgets/elevated_card.dart';
 
 class BeatRow extends StatelessWidget {
   const BeatRow({

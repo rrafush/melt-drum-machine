@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:piano/beat_maker/view/beat_maker_screen.dart';
-import 'package:piano/home/view/home_screen.dart';
-import 'package:piano/navigation/router_path.dart';
-import 'package:piano/sampler_pad/view/sampler_pad_screen.dart';
-import 'package:piano/piano/view/piano_screen.dart';
+import 'package:melt/beat_maker/view/beat_maker_screen.dart';
+import 'package:melt/home/view/home_screen.dart';
+import 'package:melt/navigation/router_path.dart';
+import 'package:melt/sampler_pad/view/sampler_pad_screen.dart';
+import 'package:melt/piano/view/piano_screen.dart';
 
 final RouteObserver<PageRoute> routeObserver = RouteObserver<PageRoute>();
 

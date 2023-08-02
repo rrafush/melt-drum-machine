@@ -1,6 +1,6 @@
 {
-    "name": "piano",
-    "short_name": "piano",
+    "name": "melt",
+    "short_name": "melt",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

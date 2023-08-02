@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
-import 'package:piano/beat_maker/controller/beat_maker_controller.dart';
+import 'package:melt/beat_maker/controller/beat_maker_controller.dart';
 
 part 'beat_maker_event.dart';
 part 'beat_maker_state.dart';

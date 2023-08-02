@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:piano/piano/view/widgets/key/piano_key.dart';
+import 'package:melt/piano/view/widgets/key/piano_key.dart';
 
 class WhiteKeys extends StatelessWidget {
   final int firstNoteOctave;

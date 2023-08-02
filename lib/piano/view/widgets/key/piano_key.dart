@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:piano/piano/controller/controller.dart';
-import 'package:piano/piano/model/key.dart';
-import 'package:piano/shared/theme/app_colors.dart';
+import 'package:melt/piano/controller/controller.dart';
+import 'package:melt/piano/model/key.dart';
+import 'package:melt/shared/theme/app_colors.dart';
 
 class PianoKey extends StatefulWidget {
   final int note;
