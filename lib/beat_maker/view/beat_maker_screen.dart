@@ -8,7 +8,7 @@ import 'package:melt/beat_maker/view/widget/beat_row.dart';
 import 'package:melt/shared/extensions/duration.dart';
 import 'package:melt/shared/extensions/int.dart';
 import 'package:melt/shared/theme/app_theme.dart';
-import 'package:melt/shared/widgets/keygroove_appbar.dart';
+import 'package:melt/shared/widgets/melt_appbar.dart';
 import 'package:melt/shared/widgets/play_button.dart';
 
 class BeatMakerScreen extends StatelessWidget {
@@ -97,7 +97,7 @@ class _BeatMakerScreenInternalState extends State<_BeatMakerScreenInternal> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: KeygrooveAppBar.horizontal(),
+      appBar: MeltAppBar.horizontal(),
       extendBodyBehindAppBar: true,
       body: BlocListener<BeatMakerBloc, BeatMakerState>(
         listener: (context, state) {

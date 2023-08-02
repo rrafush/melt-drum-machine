@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:melt/home/view/widget/home_card.dart';
 import 'package:melt/navigation/router_path.dart';
-import 'package:melt/shared/widgets/keygroove_appbar.dart';
+import 'package:melt/shared/widgets/melt_appbar.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({
@@ -91,7 +91,7 @@ class _HomeScreenState extends State<HomeScreen> with RouteAware {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const KeygrooveAppBar(),
+      appBar: const MeltAppBar(),
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: kToolbarHeight),
         child: SingleChildScrollView(

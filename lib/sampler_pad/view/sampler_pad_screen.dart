@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:melt/sampler_pad/controller/controller.dart';
 import 'package:melt/sampler_pad/view/widgets/pad.dart';
-import 'package:melt/shared/widgets/keygroove_appbar.dart';
+import 'package:melt/shared/widgets/melt_appbar.dart';
 
 class SamplerPadScreen extends StatefulWidget {
   const SamplerPadScreen({super.key});
@@ -28,7 +28,7 @@ class _SamplerPadScreenState extends State<SamplerPadScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const KeygrooveAppBar(),
+      appBar: const MeltAppBar(),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

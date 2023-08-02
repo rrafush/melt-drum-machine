@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:melt/piano/controller/controller.dart';
 import 'package:melt/piano/view/octave/octave.dart';
-import 'package:melt/shared/widgets/keygroove_appbar.dart';
+import 'package:melt/shared/widgets/melt_appbar.dart';
 
 class PianoScreen extends StatefulWidget {
   const PianoScreen({Key? key}) : super(key: key);
@@ -33,7 +33,7 @@ class _PianoScreenState extends State<PianoScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: KeygrooveAppBar.horizontal(),
+      appBar: MeltAppBar.horizontal(),
       extendBodyBehindAppBar: true,
       body: const SingleChildScrollView(
         scrollDirection: Axis.horizontal,

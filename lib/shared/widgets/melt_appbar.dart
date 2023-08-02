@@ -4,18 +4,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:melt/shared/theme/app_theme.dart';
 
-class KeygrooveAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const KeygrooveAppBar({
+class MeltAppBar extends StatelessWidget implements PreferredSizeWidget {
+  const MeltAppBar({
     super.key,
     this.isHorizontal = false,
   });
 
   final bool isHorizontal;
 
-  factory KeygrooveAppBar.horizontal({
+  factory MeltAppBar.horizontal({
     Key? key,
   }) =>
-      KeygrooveAppBar(
+      MeltAppBar(
         key: key,
         isHorizontal: true,
       );
