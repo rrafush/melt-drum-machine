@@ -21,13 +21,13 @@ class _HomeScreenState extends State<HomeScreen> with RouteAware {
     viewportFraction: 0.6,
     initialPage: 1,
   );
-  double _currentPage = 1;
+  int _currentPage = 1;
 
   @override
   void initState() {
     _pageController.addListener(() {
       setState(() {
-        _currentPage = _pageController.page ?? 1;
+        _currentPage = _pageController.page?.round() ?? 1;
       });
     });
     super.initState();
@@ -105,7 +105,7 @@ class _HomeScreenState extends State<HomeScreen> with RouteAware {
                 return AnimatedScale(
                   duration: const Duration(milliseconds: 200),
                   alignment: Alignment.center,
-                  scale: _currentPage - index == 0 ? 1.1 : 0.9,
+                  scale: _currentPage == index ? 1.1 : 0.9,
                   child: HomeCard(
                     assetImage: _getImage(index),
                     title: _getLabel(index),

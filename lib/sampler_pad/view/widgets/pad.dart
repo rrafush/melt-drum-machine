@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:melt/sampler_pad/controller/controller.dart';
 import 'package:melt/shared/theme/app_colors.dart';
+import 'package:melt/shared/theme/app_theme.dart';
 
 class Pad extends StatefulWidget {
   final int index;
@@ -40,8 +41,14 @@ class _PadState extends State<Pad> {
             borderRadius: BorderRadius.circular(5),
             gradient: RadialGradient(
               colors: [
-                AppColors.brandPink.withOpacity(value ? 1 : 0.4),
-                AppColors.brandOrange.withOpacity(value ? 1 : 0.4),
+                Theme.of(context)
+                    .colorScheme
+                    .brandPink
+                    .withOpacity(value ? 1 : 0.4),
+                Theme.of(context)
+                    .colorScheme
+                    .brandOrange
+                    .withOpacity(value ? 1 : 0.4),
               ],
               center: Alignment.center,
               focalRadius: 0,
