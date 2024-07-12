@@ -35,18 +35,21 @@ class _PianoScreenState extends State<PianoScreen> {
     return Scaffold(
       appBar: MeltAppBar.horizontal(),
       extendBodyBehindAppBar: true,
-      body: const SingleChildScrollView(
+      body: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Row(
           children: [
             // TODO: implement dynamic octaves configured by user
             Octave(
+              controller: _controller,
               octave: 4,
             ),
             Octave(
+              controller: _controller,
               octave: 5,
             ),
             Octave(
+              controller: _controller,
               octave: 6,
             ),
           ],

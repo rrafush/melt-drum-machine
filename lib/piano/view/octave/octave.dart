@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:melt/piano/controller/controller.dart';
 import 'package:melt/piano/view/octave/black_keys.dart';
 import 'package:melt/piano/view/octave/white_keys.dart';
 
 class Octave extends StatelessWidget {
-  final int octave;
-  get octaveStartingNote => (octave * 12) % 128;
-
   const Octave({
+    super.key,
     required this.octave,
-    Key? key,
-  }) : super(key: key);
+    required this.controller,
+  });
+
+  final int octave;
+  final Controller controller;
+  get octaveStartingNote => (octave * 12) % 128;
 
   @override
   Widget build(BuildContext context) {
@@ -17,9 +20,11 @@ class Octave extends StatelessWidget {
       children: [
         WhiteKeys(
           firstNoteOctave: octaveStartingNote,
+          contoller: controller,
         ),
         BlackKeys(
           firstNoteOctave: octaveStartingNote,
+          controller: controller,
         ),
       ],
     );

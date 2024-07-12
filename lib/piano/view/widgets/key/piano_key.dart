@@ -6,14 +6,17 @@ import 'package:melt/shared/theme/app_colors.dart';
 class PianoKey extends StatefulWidget {
   final int note;
   final KeyColor keyColor;
+  final Controller controller;
 
   const PianoKey.black({
     required this.note,
+    required this.controller,
     super.key,
   }) : keyColor = KeyColor.black;
 
   const PianoKey.white({
     required this.note,
+    required this.controller,
     super.key,
   }) : keyColor = KeyColor.white;
 
@@ -22,10 +25,8 @@ class PianoKey extends StatefulWidget {
 }
 
 class _PianoKeyState extends State<PianoKey> {
-  final Controller _controller = Controller();
-
   void _playNote() => setState(() {
-        _controller.playNote(widget.note);
+        widget.controller.playNote(widget.note);
       });
 
   @override

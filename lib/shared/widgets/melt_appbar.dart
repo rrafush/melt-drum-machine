@@ -39,7 +39,7 @@ class MeltAppBar extends StatelessWidget implements PreferredSizeWidget {
             : LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
-                stops: const [0, 1.5],
+                stops: const [0.5, 1.5],
                 colors: [
                   Theme.of(context).colorScheme.brandDarkBlue,
                   Theme.of(context).colorScheme.primary
